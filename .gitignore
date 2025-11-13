@@ -6,3 +6,4 @@ __pycache__/
 .venv/
 env/
 nozzle_sweep_results.csv
+*.ipynb_checkpoints
