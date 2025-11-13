@@ -15,9 +15,9 @@ Minimal estimator of ideal (isentropic) rocket nozzle performance:
 nozzle-perf-estimator-demo/
 ├─ src/
 │  ├─ __init__.py
-│  ├─ thermo.py              # isentropic relations and helpers
-│  ├─ nozzle.py              # CF, Isp, Ve, Me, Pe/Pa computations
-│  └─ run_sweep.py           # Pc × ε sweep → CSV
+│  ├─ thermo.py
+│  ├─ nozzle.py
+│  └─ run_sweep.py
 ├─ data/
 │  └─ sample_cases.csv
 ├─ tests/
@@ -25,9 +25,10 @@ nozzle-perf-estimator-demo/
 │  ├─ test_thermo.py
 │  └─ test_nozzle.py
 ├─ docs/
-│  └─ ENGINEERING_NOTE.md    # engineering note (assumptions, equations)
+│  └─ ENGINEERING_NOTE.md
+├─ CHANGELOG.md
 ├─ README.md
-├─ requirements.txt          # pytest*, pytest-cov* for dev only
+├─ requirements.txt
 └─ .gitignore
 
 
@@ -64,6 +65,10 @@ Engineering note
 See docs/ENGINEERING_NOTE.md for assumptions, equations, sanity checks, and limitations.
 
 
+## Changelog
+See [CHANGELOG.md](./CHANGELOG.md) for release notes.
+
+
 ## Extending
 
 - Add an over/under-expansion check (compare **Pe** to **Pa**) and a separation warning flag.
@@ -74,4 +79,4 @@ See docs/ENGINEERING_NOTE.md for assumptions, equations, sanity checks, and limi
 
 License
 
-MIT (or your preferred license)
+MIT/Apache-2.0
